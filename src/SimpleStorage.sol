@@ -1,15 +1,15 @@
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: SEE LICENSE IN LICENSE
 
 pragma solidity ^0.8;
 
 contract SimpleStorage {
-    string private message;
+    string private text;
 
-    function set(string memory _message) external {
-        message = _message;
+    function set(string memory _text) external {
+        text = _text;
     }
 
     function get() external view returns (string memory) {
-        return message;
+        return text;
     }
 }

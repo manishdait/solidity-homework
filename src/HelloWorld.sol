@@ -1,7 +1,7 @@
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8;
 
 contract HelloWorld {
-    string public text = "Hello, Solidity!";
+    string public message = "Hello World";
 }

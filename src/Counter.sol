@@ -1,19 +1,19 @@
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: SEE LICENSE IN LICENSE
 
 pragma solidity ^0.8;
 
 contract Counter {
     int256 public count;
 
-    function get() external view returns (int256) {
-        return count;
-    }
-
-    function incr() external {
+    function increment() external {
         count++;
     }
 
-    function decr() external {
+    function decrement() external {
         count--;
+    }
+
+    function reset() external {
+        count = 0;
     }
 }

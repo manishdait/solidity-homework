@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: SEE LICENSE IN LICENSE
 
 pragma solidity ^0.8;
 
@@ -12,20 +12,30 @@ contract CounterTest is Test {
         counter = new Counter();
     }
 
-    function testGetCount() public view {
-        int256 count = counter.get();
-        assertEq(count, 0);
+    function testDefaultValue() public view {
+        int256 value = counter.count();
+        assertEq(value, 0);
     }
 
-    function testIncrCount() public {
-        counter.incr();
-        int256 count = counter.get();
-        assertEq(count, 1);
+    function testIncrement() public {
+        counter.increment();
+        int256 value = counter.count();
+
+        assertEq(value, 1);
     }
 
-    function testDecrCount() public {
-        counter.decr();
-        int256 count = counter.get();
-        assertEq(count, -1);
+    function testDecrement() public {
+        counter.decrement();
+        int256 value = counter.count();
+
+        assertEq(value, -1);
+    }
+
+    function testReset() public {
+        counter.increment();
+        counter.reset();
+        int256 value = counter.count();
+
+        assertEq(value, 0);
     }
 }

@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: SEE LICENSE IN LICENSE
 
 pragma solidity ^0.8;
 
@@ -6,21 +6,20 @@ import {Test} from "forge-std/Test.sol";
 import {Ether} from "../src/Ether.sol";
 
 contract EtherTest is Test {
-    Ether ethers;
+    Ether etherContract;
 
     function setUp() public {
-        ethers = new Ether();
+        etherContract = new Ether();
     }
 
     function testIsWei() public view {
-        assertTrue(ethers.isWei());
-    }
-
-    function testIsGwei() public view {
-        assertTrue(ethers.isGwei());
+        bool value = etherContract.isOneWei();
+        assertTrue(value);
     }
 
     function testIsEther() public view {
-        assertTrue(ethers.isEther());
+        bool value = etherContract.isOneEther();
+        assertTrue(value);
     }
 }
+

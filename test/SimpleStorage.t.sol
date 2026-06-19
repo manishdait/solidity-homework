@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: SEE LICENSE IN LICENSE
 
 pragma solidity ^0.8;
 
@@ -6,18 +6,16 @@ import {Test} from "forge-std/Test.sol";
 import {SimpleStorage} from "../src/SimpleStorage.sol";
 
 contract SimpleStorageTest is Test {
-    SimpleStorage simpleStorage;
+    SimpleStorage store;
 
     function setUp() public {
-        simpleStorage = new SimpleStorage();
+        store = new SimpleStorage();
     }
 
-    function testSetMessage() public {
-        string memory _message = "Hello";
-        simpleStorage.set(_message);
+    function testSetGetText() public {
+        store.set("Hello");
+        string memory value = store.get();
 
-        string memory message = simpleStorage.get();
-
-        assertEq(message, _message);
+        assertEq(value, "Hello");
     }
 }
