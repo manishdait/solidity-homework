@@ -17,21 +17,14 @@ contract X {
     }
 }
 
-
-contract A is X("message"), Y("name") {
-
-}
+contract A is X("message"), Y("name") {}
 
 contract B is X, Y {
-    constructor() X("message") Y("name") {
-        
-    }
+    constructor() X("message") Y("name") {}
 }
 
 contract C is X, Y {
-    constructor(string memory _name, string memory _message) X(_message) Y(_name) {
-
-    }
+    constructor(string memory _name, string memory _message) X(_message) Y(_name) {}
 }
 
 // How to override value?
@@ -39,7 +32,7 @@ contract C is X, Y {
 contract D {
     address public owner = address(0x1);
 
-    function getAddress() public view returns(address) {
+    function getAddress() public view returns (address) {
         return owner;
     }
 }
@@ -50,5 +43,5 @@ contract E is D {
 
     constructor() {
         owner = address(0x2);
-    } 
+    }
 }
