@@ -22,11 +22,6 @@ contract Wallet {
         emit Deposite(msg.sender, msg.value, address(this).balance);
     }
 
-    // 3 ways
-    // transfer (forward 2300gas, throw error)
-    // send (forward 2300gas, bool)
-    // call (recomended) (forward all gass, bool)
-
     function withdraw(uint256 _amount) external onlyOwner {
         // owner.transfer(_amount);
         (bool success,) = payable(msg.sender).call{value: _amount}("");
