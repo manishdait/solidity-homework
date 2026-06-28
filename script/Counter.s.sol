@@ -3,7 +3,7 @@
 pragma solidity ^0.8;
 
 import {Script, console} from "forge-std/Script.sol";
-import {Counter} from "../src/Counter.sol";
+import {Counter} from "../../src/applications/Counter.sol";
 
 contract CounterScript is Script {
     function setUp() public {}
