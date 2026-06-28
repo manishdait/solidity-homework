@@ -2,7 +2,7 @@
 pragma solidity ^0.8;
 
 import {Test} from "forge-std/Test.sol";
-import {Array} from "../src/Array.sol";
+import {Array} from "../../src/tutorial/Array.sol";
 
 contract ArrayTest is Test {
     Array arr;

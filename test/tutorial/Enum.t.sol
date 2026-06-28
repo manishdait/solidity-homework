@@ -2,7 +2,7 @@
 pragma solidity ^0.8;
 
 import {Test} from "forge-std/Test.sol";
-import {Order} from "../src/Enum.sol";
+import {Order} from "../../src/tutorial/Enum.sol";
 
 contract EnumTest is Test {
     Order order;

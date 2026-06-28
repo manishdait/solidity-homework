@@ -3,7 +3,7 @@
 pragma solidity ^0.8;
 
 import {Test} from "forge-std/Test.sol";
-import {Loop} from "../src/Loop.sol";
+import {Loop} from "../../src/tutorial/Loop.sol";
 
 contract LoopTest is Test {
     Loop loop;

@@ -2,7 +2,7 @@
 pragma solidity ^0.8;
 
 import {Test} from "forge-std/Test.sol";
-import {SendEther, ReceiveEther} from "../src/SendEther.sol";
+import {SendEther, ReceiveEther} from "../../src/tutorial/SendEther.sol";
 
 contract SendEtherTest is Test {
     SendEther sender;

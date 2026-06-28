@@ -2,7 +2,7 @@
 pragma solidity ^0.8;
 
 import {Test} from "forge-std/Test.sol";
-import {Map} from "../src/Map.sol";
+import {Map} from "../../src/tutorial/Map.sol";
 
 contract MapTest is Test {
     Map map;

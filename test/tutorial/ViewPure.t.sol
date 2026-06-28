@@ -3,7 +3,7 @@
 pragma solidity ^0.8;
 
 import {Test} from "forge-std/Test.sol";
-import {ViewPure} from "../src/ViewPure.sol";
+import {ViewPure} from "../../src/tutorial/ViewPure.sol";
 
 contract ViewPureTest is Test {
     ViewPure viewPure;

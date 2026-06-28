@@ -2,7 +2,7 @@
 pragma solidity ^0.8;
 
 import {Test} from "forge-std/Test.sol";
-import {Wallet} from "../src/Wallet.sol";
+import {Wallet} from "../../src/applications/Wallet.sol";
 
 contract WalletTest is Test {
     Wallet wallet;

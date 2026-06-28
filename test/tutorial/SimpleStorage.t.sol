@@ -3,7 +3,7 @@
 pragma solidity ^0.8;
 
 import {Test} from "forge-std/Test.sol";
-import {SimpleStorage} from "../src/SimpleStorage.sol";
+import {SimpleStorage} from "../../src/tutorial/SimpleStorage.sol";
 
 contract SimpleStorageTest is Test {
     SimpleStorage store;

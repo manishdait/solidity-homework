@@ -3,7 +3,7 @@
 pragma solidity ^0.8;
 
 import {Test} from "forge-std/Test.sol";
-import {A, B, C} from "../src/MultipleInheritance.sol";
+import {A, B, C} from "../../src/tutorial/MultipleInheritance.sol";
 
 contract MultipleInheritanceTest is Test {
     A a;

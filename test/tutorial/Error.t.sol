@@ -4,7 +4,7 @@ pragma solidity ^0.8;
 
 import {Test} from "forge-std/Test.sol";
 import {stdError} from "forge-std/StdError.sol";
-import {Error} from "../src/Error.sol";
+import {Error} from "../../src/tutorial/Error.sol";
 
 contract ErrorTest is Test {
     Error err;

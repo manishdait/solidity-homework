@@ -3,7 +3,7 @@
 pragma solidity ^0.8;
 
 import {Test} from "forge-std/Test.sol";
-import {Modifiers} from "../src/Modifiers.sol";
+import {Modifiers} from "../../src/tutorial/Modifiers.sol";
 
 contract ModifiersTest is Test {
     Modifiers modifiers;

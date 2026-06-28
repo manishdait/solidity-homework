@@ -3,7 +3,7 @@
 pragma solidity ^0.8;
 
 import {Test} from "forge-std/Test.sol";
-import {HelloWorld} from "../src/HelloWorld.sol";
+import {HelloWorld} from "../../src/tutorial/HelloWorld.sol";
 
 contract HelloWorldTest is Test {
     HelloWorld hello;

@@ -1,7 +1,7 @@
 pragma solidity ^0.8;
 
 import {Test} from "forge-std/Test.sol";
-import {Todos} from "../src/Todo.sol";
+import {Todos} from "../../src/tutorial/Todo.sol";
 
 contract TodoTest is Test {
     Todos todo;

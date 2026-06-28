@@ -3,7 +3,7 @@
 pragma solidity ^0.8;
 
 import {Test} from "forge-std/Test.sol";
-import {Ether} from "../src/Ether.sol";
+import {Ether} from "../../src/tutorial/Ether.sol";
 
 contract EtherTest is Test {
     Ether etherContract;

@@ -3,7 +3,7 @@
 pragma solidity ^0.8;
 
 import {Test} from "forge-std/Test.sol";
-import {E} from "../src/MultiParentConstructor.sol";
+import {E} from "../../src/tutorial/MultiParentConstructor.sol";
 
 contract MultiParentConstructor is Test {
     E e;

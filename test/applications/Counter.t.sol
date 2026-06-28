@@ -3,7 +3,7 @@
 pragma solidity ^0.8;
 
 import {Test} from "forge-std/Test.sol";
-import {Counter} from "../src/Counter.sol";
+import {Counter} from "../../src/applications/Counter.sol";
 
 contract CounterTest is Test {
     Counter counter;
